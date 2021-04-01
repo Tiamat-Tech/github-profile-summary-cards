@@ -1,14 +1,12 @@
 import Card from './card.js'
-import {
-    scaleTime,
-    extent,
-    scaleLinear,
-    area,
-    curveMonotoneX,
-    axisBottom,
-    timeFormat,
-    axisRight,
-} from 'd3'
+const scaleTime = require('d3').scaleTime
+const extent = require('d3').extent
+const scaleLinear = require('d3').scaleLinear
+const area = require('d3').area
+const curveMonotoneX = require('d3').curveMonotoneX
+const axisBottom = require('d3').axisBottom
+const timeFormat = require('d3').timeFormat
+const axisRight = require('d3').axisRight
 import moment from 'moment'
 
 function createDetailCard(title, userDetails, contributionsData, theme) {

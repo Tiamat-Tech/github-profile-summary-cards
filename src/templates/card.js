@@ -1,6 +1,5 @@
-import { select } from 'd3'
-import jsdom from 'jsdom'
-const { JSDOM } = jsdom
+const select = require('d3').select
+const JSDOM = require('jsdom').JSDOM
 
 class Card {
     constructor(

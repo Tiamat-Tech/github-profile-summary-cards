@@ -1,5 +1,6 @@
 import Card from './card.js'
-import { pie as _pie, arc as _arc } from 'd3'
+const _pie = require('d3').pie
+const _arc = require('d3').arc
 
 function createDonutChartCard(title, data, theme) {
     const pie = _pie().value(function (d) {

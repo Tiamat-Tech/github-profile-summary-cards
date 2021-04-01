@@ -1,5 +1,8 @@
 import Card from './card.js'
-import { scaleBand, scaleLinear, axisBottom, axisLeft } from 'd3'
+const scaleBand = require('d3').scaleBand
+const scaleLinear = require('d3').scaleLinear
+const axisBottom = require('d3').axisBottom
+const axisLeft = require('d3').axisLeft
 
 function createProductiveCard(chartData, theme) {
     const card = new Card('Commits per day hour (UTC)', 340, 200, theme)

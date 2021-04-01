@@ -1,16 +1,14 @@
-import {
-    info,
-    getInput,
-    error as _error,
-    warning,
-    setFailed,
-} from '@actions/core'
+const info = require('@actions/core').info
+const getInput = require('@actions/core').getInput
+const _error = require('@actions/core').error
+const warning = require('@actions/core').warning
+const setFailed = require('@actions/core').setFailed
 import createProfileDetailsCard from './cards/profile-details-card.js'
 import createReposPerLanguageCard from './cards/repos-per-language-card.js'
 import createCommitsPerLanguageCard from './cards/most-commit-lauguage-card.js'
 import createStatsCard from './cards/stats-card.js'
 import createProductiveTimeCard from './cards/productive-time-card.js'
-import { spawn } from 'child_process'
+const spawn = require('child_process').spawn
 import { outputPath, generatePreviewMarkdown } from './utils/file-writer.js'
 import dotenv from 'dotenv'
 

@@ -1,4 +1,6 @@
-import { mkdirSync, writeFileSync, readdirSync } from 'fs'
+const mkdirSync = require('fs').mkdirSync
+const writeFileSync = require('fs').writeFileSync
+const readdirSync = require('fs').readdirSync
 import Themes from '../const/theme.js'
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY
 

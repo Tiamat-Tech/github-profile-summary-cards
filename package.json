@@ -6,6 +6,7 @@
     "scripts": {
         "run": "node src/app.js",
         "build": "ncc build src/app.js",
+        "lint": "eslint src/",
         "test": "jest --passWithNoTests "
     },
     "keywords": [
@@ -13,7 +14,6 @@
     ],
     "author": "vn7 <vn7n24fzkq@gmail.com>",
     "license": "MIT",
-    "type": "module",
     "dependencies": {
         "@actions/core": "^1.2.6",
         "@actions/github": "^4.0.0",
@@ -41,6 +41,7 @@
         "regenerator-runtime": "^0.13.7"
     },
     "pre-commit": [
-        "test"
+        "test",
+        "lint"
     ]
 }
